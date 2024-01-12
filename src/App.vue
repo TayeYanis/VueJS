@@ -1,20 +1,27 @@
 <template>
-  <div id="app">
-    <MonComposant />
-  </div>
+  <h1>Vue js : Mes Fonctionnalités</h1>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
-import MonComposant from '@/components/MonComposant.vue'
+import HelloWorld from './components/MonComposant.vue'
 
 export default {
   name: 'App',
   components: {
-    MonComposant
+    HelloWorld
   }
 }
 </script>
 
 <style>
-/* Votre style ici */
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
